@@ -1,4 +1,5 @@
 import React from 'react';
+import './About.css';
 
 export default function About(props) {
   return (
@@ -7,7 +8,7 @@ export default function About(props) {
         <div className="column">
           <img className="profile-pic" src="images/profilepic.PNG" alt="" />
         </div>
-        <div className="column">
+        <div className="column main-col">
           <h2>About Me</h2>
           <p>What started as a desire to create my own games to share with friends
           has evolved into a passion for building software that is engaging and
