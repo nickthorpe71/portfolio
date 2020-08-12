@@ -1,8 +1,11 @@
 import React from 'react';
+import './Header.css';
 
 export default function Header() {
   return (
-    < header id="home" >
+    < header id="home" style={{
+      background: "url('images/header-background.jpg')"
+    }}>
       <nav id="nav-wrap">
         <ul id="nav" className="nav">
           <li className="current"><a href="#home">Home</a></li>

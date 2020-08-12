@@ -16,7 +16,7 @@ export default function Contact(props) {
       </div>
       <div className="row">
         <div className="column">
-          <form action method="post" id="contactForm" name="contactForm">
+          <form method="post" id="contactForm" name="contactForm">
             <fieldset>
               <div>
                 <label htmlFor="contactName">Name <span className="required">*</span></label>

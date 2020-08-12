@@ -1,4 +1,5 @@
 import React from 'react';
+import './Resume.css';
 
 export default function Resume() {
   return (
@@ -14,7 +15,7 @@ export default function Resume() {
           <div className="row item">
             <div className="column">
               <h3>Thinkful</h3>
-              <p className="info">Full Stack Web Development • March 2020 - Oct 2020</p>
+              <p className="info">Full Stack Web Development <span>•</span> March 2020 - Oct 2020</p>
               <ul>
                 <li>
                   Learned industry best practices and practical software development standards with a focus on HTML5, CSS3, JavaScript, jQuery, Node.js, React, Redux, and algorithms {'&'} data structures.
@@ -37,7 +38,7 @@ export default function Resume() {
           <div className="row item">
             <div className="column">
               <h3>PartsTrader</h3>
-              <p className="info">Technical Support Specialist • July 2018 - May 2020</p>
+              <p className="info">Technical Support Specialist <span>•</span> July 2018 - May 2020</p>
               <ul>
                 <li>
                   Resolved issues customers were having with our software on a variety of different operating systems
@@ -54,7 +55,7 @@ export default function Resume() {
           <div className="row item">
             <div className="column">
               <h3>Lost One Studios</h3>
-              <p className="info"> Game Developer • Mar 2017 - July 2020</p>
+              <p className="info"> Game Developer <span>•</span> Mar 2017 - July 2020</p>
               <ul>
                 <li>
                   Wrote code for a variety of systems including AI player behaviour, game mechanics, sound integration, visual effects, UX/UI and more
