@@ -479,11 +479,12 @@ properly.
 .row {
   display: flex;
   flex-direction: row;
+  justify-content: start;
 }
-
 .column {
   display: flex;
   flex-direction: column;
+  justify-content: start;
 }
 
 

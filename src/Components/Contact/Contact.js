@@ -20,15 +20,15 @@ export default function Contact(props) {
             <fieldset>
               <div>
                 <label htmlFor="contactName">Name <span className="required">*</span></label>
-                <input type="text" defaultValue size={35} id="contactName" name="contactName" />
+                <input type="text" size={35} id="contactName" name="contactName" />
               </div>
               <div>
                 <label htmlFor="contactEmail">Email <span className="required">*</span></label>
-                <input type="text" defaultValue size={35} id="contactEmail" name="contactEmail" />
+                <input type="text" size={35} id="contactEmail" name="contactEmail" />
               </div>
               <div>
                 <label htmlFor="contactSubject">Subject</label>
-                <input type="text" defaultValue size={35} id="contactSubject" name="contactSubject" />
+                <input type="text" size={35} id="contactSubject" name="contactSubject" />
               </div>
               <div>
                 <label htmlFor="contactMessage">Message <span className="required">*</span></label>
@@ -47,13 +47,15 @@ export default function Contact(props) {
             <i className="fa fa-check" />Your message was sent, thank you!<br />
           </div>
         </div>
-        <h4>Address and Phone</h4>
-        <ul className="address">
-          <li>Nick Thorpe</li>
-          <li>Chicago, IL</li>
-          <li>(347)583-3555</li>
-          <li>nickthorpe71@gmail.com</li>
-        </ul>
+        <div className="column">
+          <h4>Address and Phone</h4>
+          <ul className="address">
+            <li>Nick Thorpe</li>
+            <li>Chicago, IL</li>
+            <li>(347)583-3555</li>
+            <li>nickthorpe71@gmail.com</li>
+          </ul>
+        </div>
       </div>
     </section>
   );

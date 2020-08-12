@@ -16,7 +16,7 @@ export default function Header() {
         <div className="banner-text">
           <h1 className="responsive-headline">I'm Nick,</h1>
           <h3>My current specialties include fullstack web development and game dev/design with Unity. </h3>
-          <ul className="social">
+          <ul className="social row">
             <li><a href="#"><i className="fa fa-twitter" /></a></li>
             <li><a href="#"><i className="fa fa-linkedin" /></a></li>
             <li><a href="#"><i className="fa fa-instagram" /></a></li>
