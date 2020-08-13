@@ -1,8 +1,8 @@
 #about {
   background: #2B2B2B;
   padding-top: 96px;
-  padding-bottom: 66px;
-  overflow: hidden;
+  overflow: auto;
+  height: calc(100vh - 16rem);
 }
 
 #about h2 {
@@ -21,9 +21,8 @@
 }
 
 #about .profile-pic {
-  position: relative;
+  padding: 4rem;
   width: 100%;
-  max-width: 160rem;
   border-radius: 100%;
 }
 

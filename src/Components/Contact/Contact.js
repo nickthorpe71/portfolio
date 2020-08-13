@@ -10,21 +10,21 @@ export default function Contact(props) {
         </div>
         <div className="column">
           <p className="lead">If you are looking for a a committed versatile developer, or you are interested
-          in connecting to discuss and work on innovative ventures.
+          in connecting to discuss / work on innovative ventures feel free to contact me directly or by using the form below.
             </p>
         </div>
       </div>
-      <div className="row">
+      <div className="row section-body">
         <div className="column">
           <form method="post" id="contactForm" name="contactForm">
             <fieldset>
               <div>
                 <label htmlFor="contactName">Name <span className="required">*</span></label>
-                <input type="text" size={35} id="contactName" name="contactName" />
+                <input type="text" size={35} id="contactName" name="contactName" required />
               </div>
               <div>
                 <label htmlFor="contactEmail">Email <span className="required">*</span></label>
-                <input type="text" size={35} id="contactEmail" name="contactEmail" />
+                <input type="email" size={35} id="contactEmail" name="contactEmail" required />
               </div>
               <div>
                 <label htmlFor="contactSubject">Subject</label>
@@ -32,7 +32,7 @@ export default function Contact(props) {
               </div>
               <div>
                 <label htmlFor="contactMessage">Message <span className="required">*</span></label>
-                <textarea cols={50} rows={15} id="contactMessage" name="contactMessage" defaultValue={""} />
+                <textarea cols={50} rows={15} id="contactMessage" name="contactMessage" defaultValue={""} required />
               </div>
               <div>
                 <button className="submit">Submit</button>

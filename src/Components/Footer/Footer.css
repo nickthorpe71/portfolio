@@ -1,9 +1,6 @@
 footer {
   height: 8rem;
-  /* background-color: #303030; */
   background-color: transparent;
-  position:absolute;
-  bottom:0;
   width:100%;
 }
 

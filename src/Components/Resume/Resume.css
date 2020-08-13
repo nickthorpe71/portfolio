@@ -21,8 +21,14 @@
   font: 25px/30px 'opensans-bold', sans-serif;
 }
 
-#resume .header-col { padding-top: 9px; }
-#resume .main-col { padding-right: 10%; }
+#resume .header-col { 
+  padding: 0.5rem 0 0 4rem; 
+  flex: 2;
+}
+#resume .main-col { 
+  padding-right: 10%; 
+  flex: 8;
+}
 
 .education, .work {
   margin-bottom: 48px;

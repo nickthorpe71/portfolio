@@ -5,29 +5,6 @@ export default function Resume() {
   return (
 
     <section id="resume">
-      {/* Education
-      ----------------------------------------------- */}
-      <div className="row education">
-        <div className="column header-col">
-          <h1><span>Education</span></h1>
-        </div>
-        <div className="column main-col">
-          <div className="row item">
-            <div className="column">
-              <h3>Thinkful</h3>
-              <p className="info">Full Stack Web Development <span>•</span> March 2020 - Oct 2020</p>
-              <ul>
-                <li>
-                  Learned industry best practices and practical software development standards with a focus on HTML5, CSS3, JavaScript, jQuery, Node.js, React, Redux, and algorithms {'&'} data structures.
-                </li>
-                <li>
-                  Created and deployed mobile-first applications while learning new languages and frameworks by collaborating several hours every week with a senior web developer.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div> {/* main-col end */}
-      </div> {/* End Education */}
       {/* Work
       ----------------------------------------------- */}
       <div className="row work">
@@ -74,6 +51,29 @@ export default function Resume() {
           </div> {/* item end */}
         </div> {/* main-col end */}
       </div> {/* End Work */}
+      {/* Education
+      ----------------------------------------------- */}
+      <div className="row education">
+        <div className="column header-col">
+          <h1><span>Education</span></h1>
+        </div>
+        <div className="column main-col">
+          <div className="row item">
+            <div className="column">
+              <h3>Thinkful</h3>
+              <p className="info">Full Stack Web Development <span>•</span> March 2020 - Oct 2020</p>
+              <ul>
+                <li>
+                  Learned industry best practices and practical software development standards with a focus on HTML5, CSS3, JavaScript, jQuery, Node.js, React, Redux, and algorithms {'&'} data structures.
+                </li>
+                <li>
+                  Created and deployed mobile-first applications while learning new languages and frameworks by collaborating several hours every week with a senior web developer.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div> {/* main-col end */}
+      </div> {/* End Education */}
       {/* Skills
       ----------------------------------------------- */}
       <div className="row skill">
