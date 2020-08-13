@@ -1,31 +1,20 @@
 import React from 'react';
 import './Header.css';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
   return (
-    < header id="home" style={{
-      background: "url('images/header-background.jpg')"
-    }}>
+    <header className="column centered">
       <nav id="nav-wrap">
         <ul id="nav" className="nav">
-          <li className="current"><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#portfolio">Work</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><Link to={'/'}>Home</Link></li>
+          <li><Link to={'/about'}>About</Link></li>
+          <li><Link to={'/resume'}>Resume</Link></li>
+          <li><Link to={'/work'}>Work</Link></li>
+          <li><Link to={'/contact'}>Contact</Link></li>
         </ul>
       </nav>
-      <div className="row banner">
-        <div className="banner-text">
-          <h1 className="responsive-headline">I'm Nick,</h1>
-          <h3>My current specialties include fullstack web development and game dev/design with Unity. </h3>
-          <ul className="social row">
-            <li><a href="#"><i className="fa fa-twitter" /></a></li>
-            <li><a href="#"><i className="fa fa-linkedin" /></a></li>
-            <li><a href="#"><i className="fa fa-instagram" /></a></li>
-          </ul>
-        </div>
-      </div>
-    </header >
+
+    </header>
   );
-};
+}
