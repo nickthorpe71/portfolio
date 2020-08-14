@@ -2,6 +2,7 @@ footer {
   height: 8rem;
   background-color: transparent;
   width:100%;
+  overflow: hidden;
 }
 
 footer a, footer a:visited { color: #FFF; }

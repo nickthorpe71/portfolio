@@ -2,6 +2,7 @@
   background: #191919;
   padding-top: 96px;
   color: #636363;
+  overflow: hidden;
 }
 #contact .section-head { 
   width: 80%;
@@ -18,8 +19,8 @@
 #contact h1:before {
   font-family: 'FontAwesome';
   content: "\f0e0";
- padding-right: 10px;
- font-size: 72px;
+  padding-right: 10px;
+  font-size: 72px;
   line-height: 72px;
   text-align: left;
   float: left;
@@ -39,6 +40,7 @@
 #contact p.lead {
   font: 18px/36px 'opensans-light', sans-serif;
   padding-right: 3%;
+  padding-left: 5%;
 }
 
 /* contact form */

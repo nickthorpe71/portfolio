@@ -14,23 +14,6 @@ export default function Resume() {
         <div className="column main-col">
           <div className="row item">
             <div className="column">
-              <h3>PartsTrader</h3>
-              <p className="info">Technical Support Specialist <span>•</span> July 2018 - May 2020</p>
-              <ul>
-                <li>
-                  Resolved issues customers were having with our software on a variety of different operating systems
-                </li>
-                <li>
-                  Built systems to automate tasks around the office using VBA and PowerApps
-                </li>
-                <li>
-                  Utilized Excel and Power BI to generate daily, weekly and monthly reporting  for management
-                </li>
-              </ul>
-            </div>
-          </div> {/* item end */}
-          <div className="row item">
-            <div className="column">
               <h3>Lost One Studios</h3>
               <p className="info"> Game Developer <span>•</span> Mar 2017 - July 2020</p>
               <ul>
@@ -45,6 +28,23 @@ export default function Resume() {
                 </li>
                 <li>
                   Identified, tested, documented and fixed bugs
+                </li>
+              </ul>
+            </div>
+          </div> {/* item end */}
+          <div className="row item">
+            <div className="column">
+              <h3>PartsTrader</h3>
+              <p className="info">Technical Support Specialist <span>•</span> July 2018 - May 2020</p>
+              <ul>
+                <li>
+                  Resolved issues customers were having with our software on a variety of different operating systems
+                </li>
+                <li>
+                  Built systems to automate tasks around the office using VBA and PowerApps
+                </li>
+                <li>
+                  Utilized Excel and Power BI to generate daily, weekly and monthly reporting  for management
                 </li>
               </ul>
             </div>

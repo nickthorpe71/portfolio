@@ -1,6 +1,7 @@
 header{
   height: 8rem;
   background-color: transparent;
+  width: 100%;
 }
 
 /* primary navigation */
@@ -23,6 +24,7 @@ ul#nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 /* Links */
@@ -42,3 +44,4 @@ ul#nav li a {
 
 ul#nav li a { color: #fff; }
 ul#nav li a:hover { color: #f4d043; }
+

@@ -1,20 +1,16 @@
 import React from 'react';
 
-export default function Portfolio() {
+export default function Portfolio(props) {
+
+  function handleClick() {
+    props.handleClick(props.projectId);
+  }
+
   return (
-    <div className="columns portfolio-item">
-      <div className="item-wrap">
-        <a href="#modal-01" title>
-          <img alt="" src="images/portfolio/coffee.jpg" />
-          <div className="overlay">
-            <div className="portfolio-item-meta">
-              <h5>Coffee</h5>
-              <p>Illustrration</p>
-            </div>
-          </div>
-          <div className="link-icon"><i className="icon-plus" /></div>
-        </a>
-      </div>
-    </div>
+    <li>
+      <button onClick={handleClick}><img className="thumbnail" src={props.image} alt="" /></button>
+      <p className="mini-title">{props.title}</p>
+      <p >{props.subTitle}</p>
+    </li>
   );
 }

@@ -1,0 +1,92 @@
+const projects = [
+  {
+    title: 'A Training Notebook',
+    subTitle: 'React/Node',
+    techs: [
+      'React.js',
+      'Node.js',
+      'Express.js',
+      'CSS',
+      'HTML',
+      'Heroku',
+      'Vercel',
+      'Chai',
+      'Nodemon',
+      'Supertest',
+      'Mocha',
+      'Enzyme',
+    ],
+    description: 'This project is called "a training notebook" because that is exactly what it is meant to supersede. Gym goers have carried notebooks or tracked their workouts on their phones for decades. In an effort to organize this ancient practice I have created a very simple and effective way to record and reacll your workouts.',
+    imagePaths: [
+      'images/portfolio/a-training-notebook/main.png',
+      'images/portfolio/a-training-notebook/workout.png',
+      'images/portfolio/a-training-notebook/landing.png',
+      'images/portfolio/a-training-notebook/login.png',
+    ],
+    gitHubLink: 'https://github.com/nickthorpe71/a-training-notebook-II-client',
+    liveSite: ''
+  },
+  {
+    title: 'Alchamancer',
+    subTitle: 'Unity',
+    techs: [
+      'C#',
+      'Unity',
+      'PUN2',
+      'Xcode',
+    ],
+    description: 'Created to allow players to quickly play a strategic spell casting game against each other online from their phone. I used Unity and C# to build the game and used PUN2 for the networking. The game appears simple but through creating it I learned the importance of having strong management systems in place to help organize and optimize the application.',
+    imagePaths: [
+      'images/portfolio/alchamancer/main.png',
+      'images/portfolio/alchamancer/red-arena.png',
+      'images/portfolio/alchamancer/win-screen.png',
+      'images/portfolio/alchamancer/alcha-arena.png',
+      'images/portfolio/alchamancer/green-bandit.png',
+    ],
+    gitHubLink: 'https://github.com/thinkful-ei-panda/star-wars-search-nick',
+    liveSite: ''
+  },
+  {
+    title: 'This Portfolio',
+    subTitle: 'React',
+    techs: [
+      'React.js',
+      'HTML',
+      'CSS',
+      'Vercel',
+    ],
+    description: 'Built to display my work and to provide an easy point of contact.',
+    imagePaths: [
+      'images/portfolio/this-portfolio/home-page.png',
+    ],
+    gitHubLink: 'https://github.com/nickthorpe71/portfolio',
+    liveSite: ''
+  },
+  {
+    title: 'Starwars API Search',
+    subTitle: 'React',
+    techs: [
+      'React.js',
+      'HTML',
+      'CSS',
+      'Vercel',
+      'Chai',
+      'Nodemon',
+      'Supertest',
+      'Mocha',
+      'Enzyme',
+    ],
+    description: 'A single page React client built to interface with a third party Star Wars API.',
+    imagePaths: [
+      'images/portfolio/star-wars-search/full.png',
+      'images/portfolio/star-wars-search/close-up.png',
+    ],
+    gitHubLink: 'https://github.com/thinkful-ei-panda/star-wars-search-nick',
+    liveSite: ''
+  },
+
+];
+
+export default {
+  projects
+};

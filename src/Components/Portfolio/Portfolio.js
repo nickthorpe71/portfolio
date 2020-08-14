@@ -1,30 +1,68 @@
-import React from 'react';
+import React, { useState } from 'react';
+import './Portfolio.css';
+import PortfolioItem from './PortfolioItem/PortfolioItem';
+import projectStore from '../../projectStore';
 
 export default function Portfolio() {
+  const [selectedProject, setSelectedProject] = useState(projectStore.projects[0]);
+
+  function handleProjectClick(projectId) {
+    setSelectedProject(projectStore.projects[projectId]);
+    console.log(selectedProject);
+  }
+
+  function renderProjectThumbnails() {
+    return projectStore.projects.map((project, index) => {
+      return <PortfolioItem
+        key={index}
+        projectId={index}
+        title={project.title}
+        subTitle={project.subTitle}
+        image={project.imagePaths[0]}
+        handleClick={handleProjectClick}
+      />;
+    });
+  }
+
+  function renderTech() {
+    let returnString = '';
+    selectedProject.techs.forEach((tech, idx) => {
+      idx === selectedProject.techs.length - 1
+        ? returnString += tech
+        : returnString += `${tech}, `;
+    });
+    return returnString;
+
+  }
+
   return (
     <section id="portfolio">
-      <div className="row">
-        <div className="column">
-          <h1>Check Out Some of My Work.</h1>
-          <div id="portfolio-wrapper">
-            {/* add portfolio items */}
-            <div className="column portfolio-item">
-              <div className="item-wrap">
-                <button>
-                  <img alt="" src="images/portfolio/coffee.jpg" />
-                  <div className="overlay">
-                    <div className="portfolio-item-meta">
-                      <h5>A Training Notebook</h5>
-                      <p>React app for tracking workouts</p>
-                    </div>
-                  </div>
-                  <div className="link-icon"><i className="icon-plus" /></div>
-                </button>
-              </div>
+      <div className="main-row">
+        <div className="column project-full">
+          <div className="col1 column">
+            <h2>{selectedProject.title}</h2>
+            <div className='row project-links'>
+              <a href={selectedProject.gitHubLink}><i className="fa fa-github" /></a>
+              <a href={selectedProject.liveSite} className="live-site">Live Project</a>
             </div>
-
+            <img className="project-img" src={selectedProject.imagePaths[0]} alt="profile pic" />
+          </div>
+          <div className="col2 column">
+            <div className="tech-used">
+              <h4>Tech Used</h4>
+              <p className="techs">{renderTech()}</p>
+            </div>
+            <div className="overview">
+              <h4>Overview</h4>
+              <p className="description">{selectedProject.description}</p>
+            </div>
           </div>
         </div>
+      </div>
+      <div className="column thumb-row">
+        <ul className="row project-list">
+          {renderProjectThumbnails()}
+        </ul>
       </div>
     </section>
   );
