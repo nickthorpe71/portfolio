@@ -24,7 +24,7 @@ const projects = [
       'images/portfolio/a-training-notebook/login.png',
     ],
     gitHubLink: 'https://github.com/nickthorpe71/a-training-notebook-II-client',
-    liveSite: ''
+    liveSite: 'https://atrainingnotebook.vercel.app/'
   },
   {
     title: 'Alchamancer',
@@ -43,8 +43,8 @@ const projects = [
       'images/portfolio/alchamancer/alcha-arena.png',
       'images/portfolio/alchamancer/green-bandit.png',
     ],
-    gitHubLink: 'https://github.com/thinkful-ei-panda/star-wars-search-nick',
-    liveSite: ''
+    gitHubLink: 'https://github.com/nickthorpe71/Alchamancer',
+    liveSite: 'https://apps.apple.com/us/app/alchamancer/id1483929834'
   },
   {
     title: 'This Portfolio',
@@ -82,7 +82,7 @@ const projects = [
       'images/portfolio/star-wars-search/close-up.png',
     ],
     gitHubLink: 'https://github.com/thinkful-ei-panda/star-wars-search-nick',
-    liveSite: ''
+    liveSite: 'https://star-wars-search-eight.vercel.app/'
   },
 
 ];

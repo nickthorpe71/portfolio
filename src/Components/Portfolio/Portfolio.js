@@ -8,7 +8,6 @@ export default function Portfolio() {
 
   function handleProjectClick(projectId) {
     setSelectedProject(projectStore.projects[projectId]);
-    console.log(selectedProject);
   }
 
   function renderProjectThumbnails() {
@@ -42,8 +41,8 @@ export default function Portfolio() {
           <div className="col1 column">
             <h2>{selectedProject.title}</h2>
             <div className='row project-links'>
-              <a href={selectedProject.gitHubLink}><i className="fa fa-github" /></a>
-              <a href={selectedProject.liveSite} className="live-site">Live Project</a>
+              <a href={selectedProject.gitHubLink} rel="noopener noreferrer" target="_blank"><i className="fa fa-github" /></a>
+              <a href={selectedProject.liveSite} className="live-site" rel="noopener noreferrer" target="_blank">Live Project</a>
             </div>
             <img className="project-img" src={selectedProject.imagePaths[0]} alt="profile pic" />
           </div>
