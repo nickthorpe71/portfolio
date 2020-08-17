@@ -81,23 +81,33 @@ export default function Resume() {
           <h1><span>Skills</span></h1>
         </div>
         <div className="column main-col">
-          <p>A summary of the skills I have aquired so far but I have a passion for learning so this list is always expanding.
-            </p>
-          <div className="bars">
-            <ul className="skills">
-              <li>React.js</li>
-              <li>Javascript</li>
-              <li>Node.js</li>
-              <li>Express</li>
-              <li>CSS</li>
-              <li>HTML5</li>
-              <li>jQuery</li>
-              <li>Vercel</li>
-              <li>Heroku</li>
-              <li>Unity</li>
-              <li>C#</li>
-            </ul>
-          </div>{/* end skill-bars */}
+          <div className="row item">
+            <div className="column">
+              <h3>Languages</h3>
+              <ul>
+                <li>Javascript</li>
+                <li>C#</li>
+                <li>CSS</li>
+                <li>HTML5</li>
+                <li>Swift</li>
+                <li>Python</li>
+              </ul>
+            </div>
+          </div>
+          <div className="row item">
+            <div className="column">
+              <h3>Software/Frameworks</h3>
+              <ul>
+                <li>React.js</li>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>jQuery</li>
+                <li>Vercel</li>
+                <li>Heroku</li>
+                <li>Unity</li>
+              </ul>
+            </div>
+          </div>
         </div> {/* main-col end */}
       </div> {/* End skills */}
     </section>

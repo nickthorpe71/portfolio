@@ -2,6 +2,12 @@ import React from 'react';
 import './Contact.css';
 
 export default function Contact(props) {
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    console.log(e.target.contactName.value);
+  }
+
   return (
     <section id="contact">
       <div className="row section-head">
@@ -16,7 +22,7 @@ export default function Contact(props) {
       </div>
       <div className="row section-body">
         <div className="column">
-          <form method="post" id="contactForm" name="contactForm">
+          <form method="post" id="contactForm" name="contactForm" onSubmit={handleSubmit}>
             <fieldset>
               <div>
                 <label htmlFor="contactName">Name <span className="required">*</span></label>
