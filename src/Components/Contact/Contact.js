@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 import './Contact.css';
 
 export default function Contact(props) {
@@ -24,7 +23,13 @@ export default function Contact(props) {
       message
     };
 
-    axios.post('API_URI', data)
+    fetch('https://cryptic-harbor-32314.herokuapp.com/api/contact', {
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    })
       .then(res => {
         setSentBool(true);
         resetForm();
@@ -57,27 +62,31 @@ export default function Contact(props) {
       <div className="row section-body">
         <div className="column">
           {/* form start */}
-          <form method="post" id="contactForm" name="contactForm" onSubmit={handleSubmit}>
+          <form id="contactForm" name="contactForm" onSubmit={handleSubmit}>
             <fieldset>
               <div>
                 <label htmlFor="contactName">Name <span className="required">*</span></label>
                 <input type="text" size={35} id="contactName" name="contactName"
-                  onChange={e => setName(e.target.value)} required />
+                  onChange={e => setName(e.target.value)} required
+                  placeholder="Your Name" value={name} />
               </div>
               <div>
                 <label htmlFor="contactEmail">Email <span className="required">*</span></label>
                 <input type="email" size={35} id="contactEmail" name="contactEmail"
-                  onChange={e => setEmail(e.target.value)} required />
+                  onChange={e => setEmail(e.target.value)} required
+                  placeholder="your@email.com" value={email} />
               </div>
               <div>
                 <label htmlFor="contactSubject">Subject</label>
                 <input type="text" size={35} id="contactSubject" name="contactSubject"
-                  onChange={e => setSubject(e.target.value)} />
+                  onChange={e => setSubject(e.target.value)}
+                  placeholder="subject message" value={subject} />
               </div>
               <div>
                 <label htmlFor="contactMessage">Message <span className="required">*</span></label>
                 <textarea cols={50} rows={15} id="contactMessage" name="contactMessage"
-                  onChange={e => setMessage(e.target.value)} defaultValue={""} required />
+                  onChange={e => setMessage(e.target.value)} defaultValue={""} required
+                  placeholder="Please write your message here" value={message} />
               </div>
               <div>
                 <button type="submit" className="submit">{buttonText}</button>
