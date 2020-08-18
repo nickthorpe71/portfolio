@@ -6,7 +6,7 @@ export default function About(props) {
     <section id="about">
       <div className="row">
         <div className="column">
-          <img className="profile-pic" src="images/profilepic.PNG" alt="" />
+          <img className="profile-pic" src="images/profilepic.png" alt="profile pic" />
         </div>
         <div className="column main-col">
           <h2>About Me</h2>
