@@ -87,6 +87,7 @@ export default function Resume() {
               <ul>
                 <li>Javascript</li>
                 <li>C#</li>
+                <li>SQL</li>
                 <li>CSS</li>
                 <li>HTML5</li>
                 <li>Swift</li>
@@ -101,6 +102,8 @@ export default function Resume() {
                 <li>React.js</li>
                 <li>Node.js</li>
                 <li>Express</li>
+                <li>PostgreSQL</li>
+                <li>Git</li>
                 <li>jQuery</li>
                 <li>Vercel</li>
                 <li>Heroku</li>
