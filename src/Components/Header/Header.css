@@ -13,14 +13,14 @@ header{
 }
 
 #nav-wrap {
-  font: 1.4rem 'opensans-bold', sans-serif;
+  font: 1.5rem 'opensans-bold', sans-serif;
   width: 100%;
   text-transform: uppercase;
   letter-spacing: 2.5px;
 }
 
 ul#nav {
-  margin: 2.4rem;
+  margin: 0.75rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -45,3 +45,12 @@ ul#nav li a {
 ul#nav li a { color: #fff; }
 ul#nav li a:hover { color: #f4d043; }
 
+@media only screen and (min-width: 700px) {
+  ul#nav {
+    margin: 2.4rem;
+  }
+
+  #nav-wrap {
+    font: 1.4rem 'opensans-bold', sans-serif;
+  }
+}

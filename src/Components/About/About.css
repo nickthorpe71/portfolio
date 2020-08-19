@@ -24,6 +24,9 @@
   padding: 4rem;
   width: 100%;
   border-radius: 100%;
+  max-width: 40rem;
+  min-width: 30rem;
+  margin: 0 auto;
 }
 
 #about .contact-details { width: 42%; }
@@ -32,7 +35,11 @@
   padding-top: 6px;
 }
 
-#about .main-col { padding-right: 5%; }
+#about .main-col { 
+  padding-right: 5%; 
+  width: 90%;
+  margin: 0 auto;
+}
 #about .download .button {
   margin-top: 6px;
   background: #444;
@@ -44,4 +51,15 @@
 #about .download .button i {
   margin-right: 15px;
   font-size: 20px;
+}
+
+#about .main-row{
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 700px) {
+  #about .main-row{
+    flex-direction: row;
+  }
 }

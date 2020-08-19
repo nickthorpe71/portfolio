@@ -4,7 +4,7 @@ import './About.css';
 export default function About(props) {
   return (
     <section id="about">
-      <div className="row">
+      <div className="main-row">
         <div className="column">
           <img className="profile-pic" src="images/profilepic.png" alt="profile pic" />
         </div>

@@ -22,15 +22,18 @@
 }
 
 #resume .header-col { 
-  padding: 0.5rem 0 0 4rem; 
+  padding: 0.5rem 2rem 0 4rem; 
   flex: 2;
 }
 #resume .main-col { 
+  padding: 0.5rem 2rem 0 4rem; 
   padding-right: 10%; 
   flex: 8;
 }
 
-.education, .work {
+.education, .work, .skill {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 48px;
   padding-bottom: 24px;
   border-bottom: 1px solid #E8E8E8;
@@ -48,4 +51,10 @@
 #resume .date {
   font: 15px/24px 'opensans-regular', sans-serif;
   margin-top: 6px;
+}
+
+@media only screen and (min-width: 500px) {
+  .work, .education, .skill{
+    flex-direction: row;
+  }
 }

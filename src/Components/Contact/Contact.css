@@ -28,6 +28,8 @@
 }
 
 #contact .section-body{
+  display: flex;
+  flex-direction: column-reverse;
   width: 80%;
   margin: 0 auto;
 }
@@ -110,4 +112,10 @@
   position: relative;
   left: 18px;
   top: 17px;
+}
+
+@media only screen and (min-width: 700px) {
+  #contact .section-body{
+    flex-direction: row;
+  }
 }

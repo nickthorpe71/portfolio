@@ -7,7 +7,7 @@ export default function Resume() {
     <section id="resume">
       {/* Work
       ----------------------------------------------- */}
-      <div className="row work">
+      <div className="work">
         <div className="column header-col">
           <h1><span>Work</span></h1>
         </div>
@@ -53,7 +53,7 @@ export default function Resume() {
       </div> {/* End Work */}
       {/* Education
       ----------------------------------------------- */}
-      <div className="row education">
+      <div className="education">
         <div className="column header-col">
           <h1><span>Education</span></h1>
         </div>
@@ -76,7 +76,7 @@ export default function Resume() {
       </div> {/* End Education */}
       {/* Skills
       ----------------------------------------------- */}
-      <div className="row skill">
+      <div className="skill">
         <div className="column header-col">
           <h1><span>Skills</span></h1>
         </div>
