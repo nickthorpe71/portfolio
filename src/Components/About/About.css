@@ -23,6 +23,7 @@
 #about .profile-pic {
   padding: 4rem;
   width: 100%;
+  align-items: flex-start;
   border-radius: 100%;
   max-width: 40rem;
   min-width: 30rem;
