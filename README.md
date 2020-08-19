@@ -19,4 +19,4 @@ A single page application build to display my work and provide a point of contac
 - LinkedIn - https://www.linkedin.com/in/nick-thorpe-dev/
 - Twitter - https://twitter.com/lostonestudios?lang=en
 - Instagram - https://saveig.org/nick_lostonestudios/
-- Website - https://lostonestudios.com/alchamancer/about
+- Website - https://nickthorpe.vercel.app/contact
