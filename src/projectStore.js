@@ -60,7 +60,7 @@ const projects = [
       'images/portfolio/this-portfolio/home-page.png',
     ],
     gitHubLink: 'https://github.com/nickthorpe71/portfolio',
-    liveSite: ''
+    liveSite: 'https://nickthorpe.vercel.app/'
   },
   {
     title: 'Starwars API Search',
@@ -84,7 +84,6 @@ const projects = [
     gitHubLink: 'https://github.com/thinkful-ei-panda/star-wars-search-nick',
     liveSite: 'https://star-wars-search-eight.vercel.app/'
   },
-
 ];
 
 export default {

@@ -17,6 +17,7 @@ header{
   width: 100%;
   text-transform: uppercase;
   letter-spacing: 2.5px;
+  margin: auto;
 }
 
 ul#nav {
