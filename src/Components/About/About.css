@@ -1,6 +1,6 @@
 #about {
   background: #2B2B2B;
-  padding-top: 96px;
+  padding-top: 1rem;
   overflow: auto;
   height: calc(100vh - 16rem);
 }
@@ -23,11 +23,15 @@
 #about .profile-pic {
   padding: 4rem;
   width: 100%;
-  height: fit-content;
+  align-self: center;
   border-radius: 100%;
   max-width: 40rem;
   min-width: 30rem;
   margin: 0 auto;
+}
+
+.stretch-fix {
+  align-items: flex-start;
 }
 
 #about .contact-details { width: 42%; }
@@ -62,5 +66,8 @@
 @media only screen and (min-width: 700px) {
   #about .main-row{
     flex-direction: row;
+  }
+  #about {
+    padding-top: 96px;
   }
 }

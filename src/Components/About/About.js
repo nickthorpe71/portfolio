@@ -5,7 +5,7 @@ export default function About(props) {
   return (
     <section id="about">
       <div className="main-row">
-        <div className="column">
+        <div className="stretch-fix">
           <img className="profile-pic" src="images/profilepic.png" alt="profile pic" />
         </div>
         <div className="column main-col">
