@@ -24,12 +24,12 @@
   flex: 4;
   position: absolute;
   width: 100%;
-  height: 19rem;
-  /* bottom: 6rem; */
+  height: 17.5rem;
   border-top: 2px solid #3d4145;
   overflow-x: auto;
   overflow-y: hidden;
   text-align: center;
+  background-color:#222222;
 }
 
 #portfolio .project-list{
@@ -43,12 +43,53 @@
 }
 
 #portfolio .project-list li{
-  margin: 1.4rem 2rem 0 2rem;
+  margin: 1.2rem 2rem 0 2rem;
   text-align: center;
 }
 
 #portfolio .mini-title{
   color: #FFF;
+  font-size: 1.3rem;
+}
+
+#portfolio .mini-sub{
+  font-size: 1.3rem;
+}
+
+#portfolio .screenshot-arrow{
+  font-size: 4rem;
+}
+
+#portfolio .screenshot-button{
+  padding: 0 1.6rem;
+  width: 100%;
+}
+
+#portfolio .arrow-left{
+  justify-content: left;
+  width: 50%;
+}
+
+#portfolio .arrow-right{
+  justify-content: right;
+  width: 50%;
+}
+
+#portfolio .screenshot-button:hover{
+  color: #222222;
+  background-color: rgba(120, 120, 120, 0.153);
+}
+
+#portfolio .screenshot-button:focus{
+  color: #222222;
+  background-color: rgba(120, 120, 120, 0.153);
+  border: #3d4145 0px;
+}
+
+#portfolio .screenshot-container{
+  margin: 5px 0 0 0;
+  text-align: center;
+  justify-content: space-evenly;
 }
 
 #portfolio .project-full{
@@ -62,7 +103,7 @@
 
 #portfolio .project-img{
   margin: 0 auto;
-  width: 100%;
+  width: 80%;
   min-width: 10rem;
   max-width: 42rem;
 }

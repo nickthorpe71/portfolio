@@ -10,7 +10,7 @@ export default function Portfolio(props) {
     <li>
       <button onClick={handleClick}><img className="thumbnail" src={props.image} alt="" /></button>
       <p className="mini-title">{props.title}</p>
-      <p >{props.subTitle}</p>
+      <p className="mini-sub">{props.subTitle}</p>
     </li>
   );
 }

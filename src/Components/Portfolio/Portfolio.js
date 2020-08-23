@@ -5,9 +5,11 @@ import projectStore from '../../projectStore';
 
 export default function Portfolio() {
   const [selectedProject, setSelectedProject] = useState(projectStore.projects[0]);
+  const [pictureIndex, setpictureIndex] = useState(0);
 
   function handleProjectClick(projectId) {
     setSelectedProject(projectStore.projects[projectId]);
+    setpictureIndex(0);
   }
 
   function renderProjectThumbnails() {
@@ -21,6 +23,10 @@ export default function Portfolio() {
         handleClick={handleProjectClick}
       />;
     });
+  }
+
+  function handleScreenShotClick(direction) {
+    setpictureIndex(pictureIndex + direction);
   }
 
   function renderTech() {
@@ -44,7 +50,15 @@ export default function Portfolio() {
               <a href={selectedProject.gitHubLink} rel="noopener noreferrer" target="_blank"><i className="fa fa-github" /></a>
               <a href={selectedProject.liveSite} className="live-site" rel="noopener noreferrer" target="_blank">Live Project</a>
             </div>
-            <img className="project-img" src={selectedProject.imagePaths[0]} alt="profile pic" />
+            <img className="project-img" src={selectedProject.imagePaths[pictureIndex]} alt="profile pic" />
+            <div className="row screenshot-container">
+              <div className="arrow-left">
+                {(pictureIndex > 0) && <button className="screenshot-button" onClick={() => handleScreenShotClick(-1)}><i className="screenshot-arrow fa fa-arrow-left" /></button>}
+              </div>
+              <div className="arrow-right">
+                {(pictureIndex < selectedProject.imagePaths.length - 1) && <button className="screenshot-button" onClick={() => handleScreenShotClick(1)}><i className="screenshot-arrow fa fa-arrow-right" /></button>}
+              </div>
+            </div>
           </div>
           <div className="col2 column">
             <div className="tech-used">
@@ -63,6 +77,6 @@ export default function Portfolio() {
           {renderProjectThumbnails()}
         </ul>
       </div>
-    </section>
+    </section >
   );
 };

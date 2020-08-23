@@ -3,6 +3,7 @@ footer {
   background-color: transparent;
   width:100%;
   overflow: hidden;
+  z-index: 5 !important;
 }
 
 footer a, footer a:visited { color: #FFF; }
