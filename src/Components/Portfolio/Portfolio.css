@@ -56,28 +56,29 @@
   font-size: 1.3rem;
 }
 
-#portfolio .screenshot-arrow{
-  font-size: 4rem;
-}
-
 #portfolio .screenshot-button{
+  background-color: rgba(130, 130, 130, 0.057);
   padding: 0 1.6rem;
   width: 100%;
-}
-
-#portfolio .arrow-left{
-  justify-content: left;
-  width: 50%;
-}
-
-#portfolio .arrow-right{
-  justify-content: right;
-  width: 50%;
 }
 
 #portfolio .screenshot-button:hover{
   color: #222222;
   background-color: rgba(120, 120, 120, 0.153);
+}
+
+#portfolio .screenshot-arrow{
+  font-size: 4rem;
+}
+
+#portfolio .arrow-left{
+  justify-content: left;
+  width: 48%;
+}
+
+#portfolio .arrow-right{
+  justify-content: right;
+  width: 48%;
 }
 
 #portfolio .screenshot-button:focus{
@@ -87,7 +88,8 @@
 }
 
 #portfolio .screenshot-container{
-  margin: 5px 0 0 0;
+  width: 80%;
+  margin: 5px auto 0 auto;
   text-align: center;
   justify-content: space-evenly;
 }
