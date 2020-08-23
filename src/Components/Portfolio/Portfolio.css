@@ -82,9 +82,7 @@
 }
 
 #portfolio .screenshot-button:focus{
-  color: #222222;
-  background-color: rgba(120, 120, 120, 0.153);
-  border: #3d4145 0px;
+  border: 0px;
 }
 
 #portfolio .screenshot-container{
