@@ -16,7 +16,7 @@ const projects = [
       'Mocha',
       'Enzyme',
     ],
-    description: 'This project is called "a training notebook" because that is exactly what it is meant to supersede. Gym goers have carried notebooks or tracked their workouts on their phones for decades. In an effort to organize this ancient practice I have created a very simple and effective way to record and reacll your workouts.',
+    description: 'This project is called "a training notebook" because that is exactly what it is meant to supersede. Gym goers have carried notebooks or tracked their workouts on their phones for decades. In an effort to organize this ancient practice I have created a very simple and effective way to record and recall your workouts.',
     imagePaths: [
       'images/portfolio/a-training-notebook/main.png',
       'images/portfolio/a-training-notebook/workout.png',
