@@ -27,6 +27,31 @@ const projects = [
     liveSite: 'https://atrainingnotebook.vercel.app/'
   },
   {
+    title: 'Codificación',
+    subTitle: 'React/Node',
+    techs: [
+      'React.js',
+      'Node.js',
+      'Express.js',
+      'CSS',
+      'HTML',
+      'Heroku',
+      'Vercel',
+      'Chai',
+      'Nodemon',
+      'Supertest',
+      'Mocha',
+      'Enzyme',
+    ],
+    description: 'An application to assist english speaking developers quickly learn key programming terms in spanish. Using spaced repetition the app presents the user with words and asks them for the translation. Providing an incorrect answer will push the word to the front of the queue, and a correct answer pushes it further back in the queue. An algorithm on the backend determines the new placement for each word.',
+    imagePaths: [
+      'images/portfolio/codificacion/dash-ss.png',
+      'images/portfolio/codificacion/learning-ss.png',
+    ],
+    gitHubLink: 'https://github.com/nickthorpe71/spaced-repitition-nick-gage-client',
+    liveSite: 'https://codificacion.vercel.app/'
+  },
+  {
     title: 'Alchamancer',
     subTitle: 'Unity',
     techs: [
@@ -60,7 +85,7 @@ const projects = [
       'images/portfolio/this-portfolio/home-page.png',
     ],
     gitHubLink: 'https://github.com/nickthorpe71/portfolio',
-    liveSite: 'https://nickthorpe.vercel.app/'
+    liveSite: 'https://nickthorpe.dev/'
   },
   {
     title: 'Starwars API Search',

@@ -54,8 +54,7 @@ export default function Contact(props) {
           <h1><span>Get In Touch.</span></h1>
         </div>
         <div className="column">
-          <p className="lead">If you are looking for a a committed versatile developer, or you are interested
-          in connecting to discuss / work on innovative ventures feel free to contact me directly or by using the form below.
+          <p className="lead">If you are interested in connecting to discuss / work on innovative ventures feel free to contact me directly or by using the form below.
             </p>
         </div>
       </div>
