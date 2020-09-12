@@ -2,6 +2,8 @@
   background: #2B2B2B;
   overflow: hidden;
   height: calc(100vh - 16rem);
+  display: flex;
+  flex-direction: row;
 }
 
 #portfolio p{
@@ -17,22 +19,21 @@
   flex: 6;
   overflow-y: auto;
   overflow-x: hidden;
-  height: calc(100vh - 33rem);
+  height: 100%;
   padding: 2% 10% 10% 10%;
 }
 #portfolio .thumb-row { 
-  flex: 4;
-  position: absolute;
+  flex: 2.5;
   width: 100%;
-  height: 17.5rem;
-  border-top: 2px solid #3d4145;
   overflow-x: auto;
-  overflow-y: hidden;
+  overflow-y: auto;
   text-align: center;
   background-color:#222222;
 }
 
 #portfolio .project-list{
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
   justify-content: start;
 }
@@ -151,9 +152,154 @@
   color: rgb(194, 194, 194);
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1200px) {
+  #portfolio {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #portfolio .main-row { 
+    flex: 6;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%;
+    padding: 2% 10% 10% 10%;
+  }
+
+  #portfolio .thumb-row { 
+    flex: 2;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    text-align: center;
+    background-color:#222222;
+  }
+
+  #portfolio .project-list{
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: start;
+  }
+
   #portfolio .project-full{
     flex-direction: row;
+  }
+
+  .col1{
+    flex: 5;
+    text-align: right;
+  }
+
+  .col2{
+    flex: 5;
+    padding-left: 2vw;
+  }
+
+  #portfolio .main-row{
+    padding: 2% 5% 5% 2%;
+  }
+}
+
+@media only screen and (max-height: 850px) {
+  #portfolio {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #portfolio .main-row { 
+    flex: 6;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%;
+    padding: 2% 10% 10% 10%;
+  }
+
+  #portfolio .thumb-row { 
+    flex: 2.5;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: auto;
+  }
+
+  #portfolio .project-list{
+    flex-direction: column;
+  }
+
+  #portfolio .project-full{
+    flex-direction: column;
+  }
+
+  .col1{
+    flex: 5;
+    text-align: right;
+  }
+
+  .col2{
+    flex: 5;
+    padding-left: 2vw;
+  }
+
+  #portfolio .main-row{
+    padding: 2% 5% 5% 2%;
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+  #portfolio {
+    position: relative;
+    flex-direction: column;
+    height: calc(100vh - 8rem);
+    margin-bottom: -8rem;
+  }
+
+  #portfolio h2{
+    font-size: 2.2rem;
+  }
+
+  #portfolio .thumb-row { 
+    width: 100%;
+    border-top: 2px solid #3d4145;
+    padding: 0 2px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    text-align: center;
+    background-color:#222222;
+    max-height: 50px;
+    min-height: 160px;
+  }
+
+  #portfolio .thumbnail{
+    width: 90%;
+    margin: 5px 0 0 0;
+  }
+
+  #portfolio .project-list{
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: start;
+  }
+
+  #portfolio .project-list .mini-title{
+    font-size: 1rem;
+  }
+
+  #portfolio .project-list .mini-sub{
+    font-size: 1.1rem;
+  }
+
+  #portfolio .project-list li{
+    flex-direction: row;
+    margin: 0.2rem 1rem;
+    justify-content: start;
+  }
+
+  #portfolio .project-full{
+    flex-direction: column;
+  }
+
+  footer{
+    visibility: hidden;
   }
 
   .col1{

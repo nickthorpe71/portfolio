@@ -79,6 +79,9 @@ const projects = [
       'HTML',
       'CSS',
       'Vercel',
+      'Node.js',
+      'express',
+      'Heroku'
     ],
     description: 'Built to display my work and to provide an easy point of contact.',
     imagePaths: [
