@@ -1,5 +1,32 @@
 const projects = [
   {
+    title: 'Saneful',
+    subTitle: 'React/Node',
+    techs: [
+      'React.js',
+      'Node.js',
+      'Express.js',
+      'CSS',
+      'HTML',
+      'Heroku',
+      'Vercel',
+      'Chai',
+      'Nodemon',
+      'Supertest',
+      'Mocha',
+      'Enzyme',
+    ],
+    description: 'A game that serves as a social commentary on the 2020 COVID19 pandemic. It\'s a survival game where the player is quarantined and working from home. The game is played in the browser and includes full user registration, the ability to save and load game progress and a leaderboard.',
+    imagePaths: [
+      'images/portfolio/saneful/game.png',
+      'images/portfolio/saneful/login.png',
+      'images/portfolio/saneful/leaderboard.png',
+      'images/portfolio/saneful/dashboard.png',
+    ],
+    gitHubLink: 'https://github.com/thinkful-ei-panda/Saneful2020-client',
+    liveSite: 'https://saneful.vercel.app/'
+  },
+  {
     title: 'A Training Notebook',
     subTitle: 'React/Node',
     techs: [
