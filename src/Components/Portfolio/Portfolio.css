@@ -170,7 +170,7 @@
     flex: 2;
     width: 100%;
     overflow-x: auto;
-    overflow-y: hidden;
+    overflow-y: auto;
     text-align: center;
     background-color:#222222;
   }
