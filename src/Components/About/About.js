@@ -11,15 +11,12 @@ export default function About(props) {
         <div className="column main-col">
           <h2>About Me</h2>
           <p>What started as a desire to create my own games to share with friends
-          has evolved into a passion for building software that is engaging and
+          evolved into a passion for building software that is engaging and
           innovative. Most of my online presence as a developer has been through
           Lost One Studios which can be found on both Instagram and Twitter.
-          I recently launched a turn based strategy PvP game in the mobile market
-          called Alchamancer which has hundreds of downloads. I am currently attending
-          the Thinkful software engineering bootcamp to expand my fullstack web dev skills and
-          ultimately find a great team that I can commit to and work with to deliver
-          amazing products. Outside of programming I love playing music and exercising,
-          currently on a calisthenics kick.
+          In Feb 2020 I launched a turn based strategy PvP game in the mobile market
+          called Alchamancer which has hundreds of downloads. I attended
+          the Thinkful software engineering bootcamp, committing 80 hours a week for five months to expand my fullstack web dev skills. My Ultimate goal is to find a great team that I can learn from and work with to deliver amazing products. Outside of programming I love playing music and exercising, currently on a calisthenics kick.
             </p>
           <div className="row">
             <div className="column contact-details">

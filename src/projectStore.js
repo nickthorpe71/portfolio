@@ -18,8 +18,8 @@ const projects = [
     ],
     description: 'A game that serves as a social commentary on the 2020 COVID19 pandemic. It\'s a survival game where the player is quarantined and working from home. The game is played in the browser and includes full user registration, the ability to save and load game progress and a leaderboard.',
     imagePaths: [
-      'images/portfolio/saneful/game.png',
       'images/portfolio/saneful/login.png',
+      'images/portfolio/saneful/game.png',
       'images/portfolio/saneful/leaderboard.png',
       'images/portfolio/saneful/dashboard.png',
     ],
@@ -54,6 +54,26 @@ const projects = [
     liveSite: 'https://atrainingnotebook.vercel.app/'
   },
   {
+    title: 'Alchamancer',
+    subTitle: 'Unity',
+    techs: [
+      'C#',
+      'Unity',
+      'PUN2',
+      'Xcode',
+    ],
+    description: 'Created to allow players to quickly play a strategic spell casting game against each other online from their phone. I used Unity and C# to build the game and used PUN2 for the networking. The game appears simple but through creating it I learned the importance of having strong management systems in place to help organize and optimize the application.',
+    imagePaths: [
+      'images/portfolio/alchamancer/main.png',
+      'images/portfolio/alchamancer/red-arena.png',
+      'images/portfolio/alchamancer/win-screen.png',
+      'images/portfolio/alchamancer/alcha-arena.png',
+      'images/portfolio/alchamancer/green-bandit.png',
+    ],
+    gitHubLink: 'https://github.com/nickthorpe71/Alchamancer',
+    liveSite: 'https://apps.apple.com/us/app/alchamancer/id1483929834'
+  },
+  {
     title: 'Codificación',
     subTitle: 'React/Node',
     techs: [
@@ -79,24 +99,27 @@ const projects = [
     liveSite: 'https://codificacion.vercel.app/'
   },
   {
-    title: 'Alchamancer',
+    title: 'Robo Shotgun Birthday',
     subTitle: 'Unity',
     techs: [
       'C#',
       'Unity',
       'PUN2',
-      'Xcode',
+      'JavaScript',
+      'HTML5',
+      'CSS3',
+      'Vercel'
     ],
-    description: 'Created to allow players to quickly play a strategic spell casting game against each other online from their phone. I used Unity and C# to build the game and used PUN2 for the networking. The game appears simple but through creating it I learned the importance of having strong management systems in place to help organize and optimize the application.',
+    description: 'A proof on convept for a top down shooter that will soon be multiplayer. This game is all about precise input to make for an adreneline pumping twitch reaction game. It is designed with visuals that tell the player the status of their character which reduces the amount of necessary UI. Currently featuring a complex decisionmaking AI to emulate other players',
     imagePaths: [
-      'images/portfolio/alchamancer/main.png',
-      'images/portfolio/alchamancer/red-arena.png',
-      'images/portfolio/alchamancer/win-screen.png',
-      'images/portfolio/alchamancer/alcha-arena.png',
-      'images/portfolio/alchamancer/green-bandit.png',
+      'images/portfolio/robo-shotgun-birthday/main.jpeg',
+      'https://media.giphy.com/media/w68Ey3eYioVJLlFVFp/giphy.gif',
+      'images/portfolio/robo-shotgun-birthday/gameplay1.png',
+      'images/portfolio/robo-shotgun-birthday/gameplay2.png',
+      'images/portfolio/robo-shotgun-birthday/gameplay3.png',
     ],
-    gitHubLink: 'https://github.com/nickthorpe71/Alchamancer',
-    liveSite: 'https://apps.apple.com/us/app/alchamancer/id1483929834'
+    gitHubLink: 'https://github.com/nickthorpe71/shotgun-birthday',
+    liveSite: 'https://roboshotgunbirthday.vercel.app/'
   },
   {
     title: 'This Portfolio',
