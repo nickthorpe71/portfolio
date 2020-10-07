@@ -110,7 +110,7 @@ const projects = [
       'CSS3',
       'Vercel'
     ],
-    description: 'A proof on convept for a top down shooter that will soon be multiplayer. This game is all about precise input to make for an adreneline pumping twitch reaction game. It is designed with visuals that tell the player the status of their character which reduces the amount of necessary UI. Currently featuring a complex decisionmaking AI to emulate other players',
+    description: 'A proof on concept for a top down shooter that will soon be multiplayer. This game is all about precise input to make for an adrenaline pumping twitch reaction game. It is designed with visuals that tell the player the status of their character which reduces the amount of necessary UI. Currently featuring a complex decision making AI to emulate other players',
     imagePaths: [
       'images/portfolio/robo-shotgun-birthday/main.jpeg',
       'https://media.giphy.com/media/w68Ey3eYioVJLlFVFp/giphy.gif',
