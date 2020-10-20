@@ -238,6 +238,7 @@
   }
 
   .col1{
+    margin-top: 30rem;
     flex: 5;
     text-align: right;
   }
